@@ -2,23 +2,23 @@ import email from "../../email.json"
 import EmailListItem from "./EmailListItem"
 
 
-export  default function EmailList({setOpenEmail}){
+export default function EmailList({ setOpenEmail }) {
 
-  return(
+  return (
 
 
     <>
-    <div className="relative overflow-y-scroll grow">
-        {email.map(email=> 
-          (
-            <EmailListItem
+      <div className="relative overflow-y-scroll grow">
+        {email.map(email =>
+        (
+          <EmailListItem
             key={email.id}
-            onClick={()=> setOpenEmail(email)} 
+            onClick={() => setOpenEmail(email)}
             email={email}
-            />
-          
-          ))}
-    </div>
+          />
+
+        ))}
+      </div>
     </>
   )
 
