@@ -28,7 +28,7 @@ Este projeto foi desenvolvido como parte do meu aprendizado e prática em Tailwi
 2. Acesse o diretório do projeto:
 
    ```bash
-   cd 
+   cd tailwindcss
    ```
 
 3. Instale as dependências:
