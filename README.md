@@ -54,3 +54,4 @@ Contribuições são bem-vindas! Se você encontrar problemas ou melhorias poten
 ## Autor
 
 Davi Sanches Simão
+
