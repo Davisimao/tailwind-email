@@ -4,14 +4,19 @@ import { FiSend } from "react-icons/fi";
 import { FiInbox } from "react-icons/fi";
 import { FiFileText } from "react-icons/fi";
 import { FiArchive } from "react-icons/fi";
-import { FiAlertOctagon } from "react-icons/fi";
 import { FiTrash2 } from "react-icons/fi";
+import { MdNightlightRound } from "react-icons/md";
 
 import Button from "./button";
+import PageMode from "./PageMode";
+import { useState } from "react";
 
 const inline = "inline mr-1 mb-1"
 
 export default function Sidebar() {
+
+  const [modeView, setModeView] = useState(true)
+
   return (
     <aside className="hidden md:flex md flex-col items-start gap-2 grow-0 basis-48 shrink-1">
       <WriteButton>
@@ -35,6 +40,11 @@ export default function Sidebar() {
       <Button>
         <FiTrash2 className={inline} />    Lixeira
       </Button>
+
+      <PageMode />
+
+
+
 
     </aside>
   )
